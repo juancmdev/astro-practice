@@ -1,16 +1,25 @@
 ---
-
+import Card from "./Card.astro";
 ---
 
 <main class="container-main">
-  <h1>Lado Izquierdo</h1>
-  <h1>Sección Principal</h1>
-  <h1>Lado derecho</h1>
+  <div>
+    <h1>Lado Izquierdo</h1>
+  </div>
+  <div>
+    <h1>Sección Principal</h1>
+    <Card />
+  </div>
+  <div><h1>Lado derecho</h1></div>
 </main>
 
 <style>
+  h1 {
+    text-align: center;
+  }
   .container-main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20% 60% 20%;
+    height: max-content;
   }
 </style>
