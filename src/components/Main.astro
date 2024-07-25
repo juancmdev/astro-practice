@@ -8,7 +8,23 @@ import Card from "./Card.astro";
   </div>
   <div>
     <h1>Sección Principal</h1>
-    <Card />
+    <div class="container-cards">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </div>
   <div><h1>Lado derecho</h1></div>
 </main>
@@ -20,6 +36,11 @@ import Card from "./Card.astro";
   .container-main {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    height: max-content;
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
   }
 </style>
