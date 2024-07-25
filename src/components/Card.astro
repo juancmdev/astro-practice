@@ -1,0 +1,49 @@
+---
+import Button from "./Button.astro";
+
+---
+<section class="container-card">
+    <div class="container-img">
+        <img src="/src/img/robot.jpg" alt="robot">
+    </div>
+
+    <div class="container-description">
+        <h1>PRODUCTO</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat placerat est, ac venenatis neque. Maecenas mollis mi elit.</p>
+        <div class="container-buttons">
+            <Button text={"Detalles"}/>
+            <Button text={"Comprar"}/>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container-card {
+        width: 300px;
+        height: fit-content;
+        border: 2px solid black;
+        & .container-img {
+            border: 2px solid red;
+            margin: 20px;
+
+            & img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .container-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid blue;
+        margin: 20px;
+
+        & p {
+            text-align: center;
+        }
+    }
+
+
+</style>
