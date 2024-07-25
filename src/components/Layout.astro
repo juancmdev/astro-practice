@@ -3,6 +3,7 @@ import Hero from "../components/Hero.astro";
 import Navigation from "../components/Navigation.astro";
 import Main from "../components/Main.astro";
 import Footer from "./Footer.astro";
+import Card from "./Card.astro";
 ---
 
 <html lang="en">
@@ -17,7 +18,9 @@ import Footer from "./Footer.astro";
   <body>
     <Hero />
     <Navigation />
-    <Main />
+    <Main>
+      <Card/>
+    </Main>
     <Footer />
   </body>
 </html>
