@@ -3,31 +3,18 @@ import Card from "./Card.astro";
 ---
 
 <main class="container-main">
-  <div>
-    <h1>Lado Izquierdo</h1>
-  </div>
-  <div>
-    <h1>Sección Principal</h1>
-    <div class="container-cards">
-      
-     
-    </div>
-  </div>
-  <div><h1>Lado derecho</h1></div>
+  <img src="/src/img/imagen-celu.jpeg" alt="Imagen Celular">
 </main>
 
 <style>
   h1 {
     text-align: center;
   }
-  .container-main {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-  }
 
-  .container-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+  img {
+    width: 100vw;
+    height: 600px;
+    filter: blur(7px);
   }
+  
 </style>
