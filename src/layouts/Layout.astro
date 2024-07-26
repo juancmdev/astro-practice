@@ -2,8 +2,7 @@
 import Hero from "../components/Hero.astro";
 import Navigation from "../components/Navigation.astro";
 import Main from "../components/Main.astro";
-import Footer from "./Footer.astro";
-import Card from "./Card.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -13,21 +12,18 @@ import Card from "./Card.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
-    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
     <Hero />
     <Navigation />
-    <Main/>
+    <Main />
     <Footer />
   </body>
 </html>
 
 <style>
   body {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    background: orange;
   }
 </style>
 
