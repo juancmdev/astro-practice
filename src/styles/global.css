@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Roboto+Slab:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -7,5 +7,6 @@
 }
 
 body {
-  font-family: "Concert One", sans-serif;
+  font-family: 'Original Surfer', Courier, monospace;
+  background: silver;
 }
