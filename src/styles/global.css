@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Roboto+Slab:wght@100..900&display=swap');
+:root{
+  --border-color: rgba(0, 0, 0, 0.04);
+}
 
 * {
   margin: 0;
