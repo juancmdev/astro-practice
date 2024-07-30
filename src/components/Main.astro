@@ -4,9 +4,8 @@
 ---
 
 <main class="container-main">
-  <h1>Una gran variedad de productos.</h1>
   <div class="background">
-    <img src="/img/background-watch.webp" alt="background">
+    <h1>Una gran variedad de productos.</h1>
   </div>
 </main>
 
@@ -23,27 +22,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px);
-    overflow: hidden; 
+    filter: blur(0px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container-main .background img{
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: -100; */
   }
 
-  .container-main h1 {
-    position: absolute;
-    top: 350px;
-    left: 50px;
-    filter: blur(0px);
-    z-index: 1000;
+  .container-main .background h1 {
+    text-align: center;
   }
   
 
-  
+  @media (width >= 768px) {
+  /* Estilos para pantallas de 768px o más */
+}
 
   
 </style>
