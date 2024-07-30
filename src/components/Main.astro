@@ -11,16 +11,12 @@
     <!-- <div class="container-el"></div>
     <div class="container-el"></div> -->
   </div>
-  <!-- <div class="first">
-    <div class="container-el"></div>
-    <div class="container-el"></div>
-    <div class="container-el"></div>
-  </div>
-</main> -->
 
 <style>
   .container-main {
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .first {
@@ -28,11 +24,10 @@
     height: 400px;
     background: aquamarine;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     border: 1px solid black;
-    
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;*/
 }
 
 .container-el {
