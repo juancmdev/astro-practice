@@ -4,61 +4,46 @@
 ---
 
 <main class="container-main">
-  <div class="first">
-    <div class="container-el">
-      <img src="/img/Designer.jpeg" alt="" class="image">
-    </div>
-    <!-- <div class="container-el"></div>
-    <div class="container-el"></div> -->
+  <h1>Una gran variedad de productos.</h1>
+  <div class="background">
+    <img src="/img/background-watch.webp" alt="background">
   </div>
-  <div class="first">
-    <div class="container-el">
-      <img src="/img/Designer.jpeg" alt="" class="image">
-    </div>
-    <!-- <div class="container-el"></div>
-    <div class="container-el"></div> -->
-  </div>
-  <div class="first">
-    <div class="container-el">
-      <img src="/img/Designer.jpeg" alt="" class="image">
-    </div>
-    <!-- <div class="container-el"></div>
-    <div class="container-el"></div> -->
-  </div>
-  
-  </div>
+</main>
 
 <style>
   .container-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 1ps solid black;
-    gap: 20px;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
 
-  .first {
+  .container-main .background{
     width: 100%;
-    height: 400px;
-    margin: 20px auto;
-    border: 1px solid black;
-    /*display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;*/
-}
+    height: 565px;
+    background-image: url('/img/background-watch.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    overflow: hidden; 
+  }
 
-.container-el {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-}
+  .container-main .background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
 
-.container-el .image {
-    width: 100%;
-    height: 100%;
-}
+  .container-main h1 {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    filter: blur(0px);
+    z-index: 1000;
+  }
+  
 
+  
 
   
 </style>
