@@ -1,6 +1,6 @@
 ---
 
-const {text} = Astro.props;
+const {text, color} = Astro.props;
 ---
 <style>
     button {
@@ -22,4 +22,4 @@ const {text} = Astro.props;
     }
 </style>
 
-<button>{text}</button>
+<button style={{backgroundColor:color}}>{text}</button>
