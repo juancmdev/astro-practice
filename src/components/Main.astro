@@ -7,7 +7,7 @@
   <div class="background">
     <div class="content">
       <h1>Una gran variedad de productos.</h1>
-      <button>Click here</button>
+      <a href="#" class="button">Click here</a>
     </div>
   </div>
 </main>
@@ -31,15 +31,22 @@
     align-items: center;
   }
 
-  .container-main .background img{
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100; */
+  .container-main .background .content{
+    margin-left: 90px;
   }
 
-  .container-main .background h1 {
+  .container-main .background .content h1 {
     text-align: center;
+  }
+
+  .container-main .background .content .button {
+    background-color: blue;
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
   }
   
 
