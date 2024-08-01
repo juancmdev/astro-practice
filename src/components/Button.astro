@@ -1,25 +1,25 @@
 ---
-
-const {text, color} = Astro.props;
+const { text, bgcolor, color } = Astro.props;
 ---
-<style>
-    button {
-        background: black;
-        border: none;
-        color: white;
-        font-weight: bold;
-        padding: 8px 14px;
-        border-radius: 4px;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: 0.2s all ease-in-out;
-    }
 
-    button:hover {
-        background: white;
-        color: black;
-        border: 1px solid black;
-    }
+<style>
+  button {
+    background: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+
+  button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
 </style>
 
-<button style={{backgroundColor:color}}>{text}</button>
+<button style={{ backgroundColor: bgcolor, color: color }}>{text}</button>

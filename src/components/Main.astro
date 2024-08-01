@@ -1,6 +1,5 @@
 ---
 import Button from "./Button.astro";
-
 ---
 
 <main class="container-main">
@@ -8,7 +7,9 @@ import Button from "./Button.astro";
     <div class="content">
       <h1>Una gran variedad de productos.</h1>
       <a href="#" class="button">Click here</a>
-      <Button text={'Click here'} color="orange"/>
+      <Button text={"Click here"} bgcolor="red" color="white" />
+      <Button text={"Click "} bgcolor="blue" color="white" />
+      <Button text={"Click hereeeeee"} bgcolor="green" color="white" />
     </div>
   </div>
 </main>
@@ -19,20 +20,20 @@ import Button from "./Button.astro";
     height: auto;
   }
 
-  .container-main .background{
+  .container-main .background {
     width: 100%;
     height: 565px;
-    background-image: url('/img/background-watch.webp');
+    background-image: url("/img/background-watch.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(0px); 
+    filter: blur(0px);
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .container-main .background .content{
+  .container-main .background .content {
     margin-left: 90px;
     display: flex;
     flex-direction: column;
@@ -64,11 +65,8 @@ import Button from "./Button.astro";
     border-radius: 10px;
     letter-spacing: 3px;
   }
-  
 
   @media (width >= 768px) {
-  /* Estilos para pantallas de 768px o más */
-}
-
-  
+    /* Estilos para pantallas de 768px o más */
+  }
 </style>
