@@ -10,12 +10,14 @@ import Button from "./Button.astro";
       <Button text={"Click here"} bgcolor="red" color="white" />
     </div>
   </div>
+  <slot/>
 </main>
 
 <style>
   .container-main {
     width: 100%;
-    height: auto;
+    height: 100%;
+    flex-grow: 1;
   }
 
   .container-main .background {

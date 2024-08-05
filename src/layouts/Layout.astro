@@ -2,6 +2,8 @@
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import Main from "../components/Main.astro";
+import Card from "../components/Card.astro";
 ---
 
 <html lang="en">
@@ -16,12 +18,20 @@ import Footer from "../components/Footer.astro";
   <body>
     <Header />
     <Navigation />
-    <slot/>
+    <Main>
+      <Card/>
+    </Main>
     <Footer />
   </body>
 </html>
 
 <style>
-  
+  body {
+    background-color: aqua;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
