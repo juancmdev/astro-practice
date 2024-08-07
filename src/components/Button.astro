@@ -2,6 +2,8 @@
 const { text, bgcolor, color } = Astro.props;
 ---
 
+<button class="my-button" style={{ backgroundColor: bgcolor, color: color }}>{text}</button>
+
 <style>
   button {
     background: black;
@@ -15,11 +17,11 @@ const { text, bgcolor, color } = Astro.props;
     transition: 0.2s all ease-in-out;
   }
 
-  button:hover {
-    background: white;
-    color: black;
-    border: 1px solid black;
+  & button:hover {
+      background: white;
+      color: black;
+      border: 1px solid black;
   }
 </style>
 
-<button style={{ backgroundColor: bgcolor, color: color }}>{text}</button>
+
