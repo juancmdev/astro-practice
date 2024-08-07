@@ -7,8 +7,14 @@ import Button from "./Button.astro";
         
     </div>
 
+    <h1 class="title">PRODUCTO</h1>
+
+    <div class="img-robot">
+        <img src="/public/img/robot.jpg" alt="img robot">
+    </div>
+
     <div class="container-buttons">
-        <Button text={"Detalles"}/>
+        <Button text={"Detalles"} bgcolor={"blue"} color={"white"}/>
         <Button text={"Comprar"} bgcolor={"purple"}/>
     </div>
 
@@ -25,18 +31,41 @@ import Button from "./Button.astro";
 <style>
     .container-card {
         position: relative;
-        width: 350px;
-        height: 500px;
+        width: 280px;
+        height: 450px;
     }
     .background {
         background-color: grey;
-        width: 350px;
-        height: 500px;
+        width: 280px;
+        height: 450px;
         position: absolute;
         top: 0;
         left: 0px;
-        opacity: 0.7;
+        opacity: 0.5;
+        filter: blur(1px);
         border-radius: 20px;
+    }
+
+    .title {
+        position: absolute;
+        top: 30px;
+        /* background: antiquewhite; */
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .img-robot {
+        position: absolute;
+        top: 80px;
+        /* background: antiquewhite; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            display: block;
+        }
     }
 
     .container-buttons {
@@ -45,7 +74,7 @@ import Button from "./Button.astro";
         align-items: center;
         gap: 20px;
         width: 100%;
-        height: 20%;
+        height: 10%;
         position: absolute;
         bottom: 40px;
         left: 0;
