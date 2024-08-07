@@ -22,8 +22,6 @@ import Button from "./Button.astro";
         width: 300px;
         height: fit-content;
         border: 2px solid black;
-        backdrop-filter: brightness(10px);
-        background-color: rgba(15, 15, 15, 0.5);
        
         
         & .container-img {
@@ -48,6 +46,10 @@ import Button from "./Button.astro";
         & p {
             text-align: center;
         }
+    }
+
+    .container-description::before{
+        opacity: 0.5;
     }
 
 
