@@ -10,18 +10,17 @@ import Button from "./Button.astro";
       <Button text={"Click here"} bgcolor="red" color="white" />
     </div>
   </div>
-  <slot/>
+  <slot />
 </main>
 
 <style>
   .container-main {
-    width: 100%;
-    height: 100%;
-    flex-grow: 1;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .container-main .background {
-    width: 100%;
+    width: 80%;
     height: 565px;
     background-image: url("/img/background-watch.webp");
     background-position: center;
@@ -31,6 +30,7 @@ import Button from "./Button.astro";
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1000;
   }
 
   .container-main .background .content {
