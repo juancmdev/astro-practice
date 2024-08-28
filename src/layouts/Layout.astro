@@ -18,8 +18,8 @@ import Card from "../components/Card.astro";
   <body>
     <Header />
     <Navigation />
+    <Main/>
     <div class="container">
-      <Main/>
     </div>
   </body>
 </html>
@@ -30,6 +30,7 @@ import Card from "../components/Card.astro";
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: -100;
   }
 
   .container {
